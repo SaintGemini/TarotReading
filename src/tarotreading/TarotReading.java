@@ -1,12 +1,6 @@
 
 package tarotreading;
 import java.util.Random;
-import java.awt.Image;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-import javax.imageio.ImageIO;
-
 
 public class TarotReading {
 
@@ -37,10 +31,5 @@ public class TarotReading {
             System.out.println(reading.getCard(i).toString());
                 }
             }
-        BufferedImage img = null;
-try {
-    img = ImageIO.read(new File("strawberry.jpg"));
-} catch (IOException e) {
-}
     }
 }
