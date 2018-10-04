@@ -1,5 +1,3 @@
-package tarotreading;
-
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -23,12 +21,11 @@ public void removeCard(int x){
 
 
 public void shuffle(){
-    for(int i = 0; i < 9; i++){
+    for(int i = 0; i < 19; i++){
         Collections.shuffle(this.cards);
         i++;
         }
     }
-
 
 public Card getCard(int x){
     return this.cards.get(x);
@@ -40,7 +37,7 @@ public int getSize() {
      
 }
     
-public void drawFromDeck(TarotDeck anyDeck){
+public void threeCardReading(TarotDeck anyDeck){
 
     for(int i = 77; i >74; i--){        
         this.cards.add(anyDeck.getCard(i));  
@@ -48,22 +45,18 @@ public void drawFromDeck(TarotDeck anyDeck){
     }
 
 } 
-
-
-
-public void createMinorArcana(){
+   
+public void createTarotDeck(){
+    //creates minor arcana
     for(Suit cardSuit : Suit.values()){
         for(Value cardValue : Value.values()){
             this.cards.add(new Card(cardSuit, cardValue));
             }
         }
-    }
-    
-    
-public void createMajorArcana(){
+    //creates major arcana
     for(Name name : Name.values()){
         this.cards.add(new Card(name));
-        }  
-    }      
+        } 
+    }
         
 }
