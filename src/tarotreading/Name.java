@@ -1,5 +1,3 @@
-package tarotreading;
-
 public enum Name {
     FOOL,
     MAGICIAN,
@@ -22,8 +20,5 @@ public enum Name {
     MOON,
     SUN,
     LASTJUDGMNET,
-    UNIVERSE
-   
-   
-    
+    UNIVERSE   
 }
