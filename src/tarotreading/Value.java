@@ -1,5 +1,3 @@
-package tarotreading;
-
 public enum Value {
     ACE,
     TWO,
@@ -14,6 +12,5 @@ public enum Value {
     KNIGHT,
     QUEEN,
     KING,
-    PRINCESS
-   
+    PRINCESS  
 }
