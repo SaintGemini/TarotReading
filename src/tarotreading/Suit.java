@@ -1,5 +1,3 @@
-package tarotreading;
-
 public enum Suit {
     WANDS,
     CUPS,
